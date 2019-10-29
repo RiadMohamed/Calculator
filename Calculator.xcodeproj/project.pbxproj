@@ -58,13 +58,45 @@
 			children = (
 				0C6547BA2368895E00808DAC /* AppDelegate.swift */,
 				0C6547BC2368895E00808DAC /* SceneDelegate.swift */,
-				0C6547BE2368895E00808DAC /* ViewController.swift */,
-				0C6547C02368895E00808DAC /* Main.storyboard */,
+				0C6547D3236889E400808DAC /* UML */,
+				0C6547CE236889AF00808DAC /* Model */,
+				0C6547D1236889C300808DAC /* Controller */,
+				0C6547D0236889BC00808DAC /* View */,
 				0C6547C32368897100808DAC /* Assets.xcassets */,
 				0C6547C52368897100808DAC /* LaunchScreen.storyboard */,
 				0C6547C82368897100808DAC /* Info.plist */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		0C6547CE236889AF00808DAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0C6547D0236889BC00808DAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C6547C02368895E00808DAC /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0C6547D1236889C300808DAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C6547BE2368895E00808DAC /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0C6547D3236889E400808DAC /* UML */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RiadMohamed.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RiadMohamed.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
