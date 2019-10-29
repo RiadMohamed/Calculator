@@ -40,6 +40,9 @@ class Calculator {
                 default:
                 result = leftOP + rightOP
             }
+            isFinished = true
+            leftOperand = nil
+            rightOperand = nil
             return result ?? 6969
         }
         print("ERROR READING OPERANDS!!")

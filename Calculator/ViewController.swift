@@ -66,17 +66,20 @@ class ViewController: UIViewController {
         calc.setOperand(text)
         text = ""
     }
-    
     @IBAction func addButtonTapped(_ sender: UIButton) {
         calc.operation = 4
         calc.setOperand(text)
         text = ""
     }
+   
     @IBAction func equalButtonTapped(_ sender: UIButton) {
         calc.setOperand(text)
         text = String(calc.calculate())
     }
     @IBAction func numberButtonTapped(_ sender: UIButton) {
+        if calc.isFinished {
+            text = ""
+        }
         text.append(sender.currentTitle!)
     }    
     @IBAction func clearButtonTapped(_ sender: UIButton) {
