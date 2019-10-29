@@ -84,5 +84,19 @@ class ViewController: UIViewController {
             text.removeLast()
         }
     }
+    @IBAction func negativeButtonTapped(_ sender: UIButton) {
+        if !text.isEmpty {
+            if text.first == "-" {
+                text.removeFirst()
+            } else {
+                text.insert("-", at: text.startIndex)
+            }
+        }
+    }
+    @IBAction func percentageButtonTapped(_ sender: UIButton) {
+        if !text.isEmpty {
+            text = String((Double(text)! / 100))
+        }
+    }
 }
 
