@@ -78,7 +78,11 @@ class ViewController: UIViewController {
     }
     @IBAction func numberButtonTapped(_ sender: UIButton) {
         text.append(sender.currentTitle!)
+    }    
+    @IBAction func clearButtonTapped(_ sender: UIButton) {
+        if !text.isEmpty {
+            text.removeLast()
+        }
     }
-    
 }
 
