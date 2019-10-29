@@ -32,7 +32,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7hN-Dz-0D3">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="101.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNt-Km-4pM">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNt-Km-4pM">
                                                         <rect key="frame" x="0.0" y="0.0" width="97.5" height="101.5"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
@@ -63,6 +63,9 @@
                                                         <state key="normal" title="÷">
                                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="divButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="31z-8g-RHE"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -76,6 +79,9 @@
                                                         <state key="normal" title="7">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iIG-S6-vMk"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9k2-yR-ZCn">
                                                         <rect key="frame" x="105.5" y="0.0" width="97.5" height="101.5"/>
@@ -84,6 +90,9 @@
                                                         <state key="normal" title="8">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UoG-1C-naP"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIe-na-OsS">
                                                         <rect key="frame" x="211" y="0.0" width="97.5" height="101.5"/>
@@ -92,6 +101,9 @@
                                                         <state key="normal" title="9">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4C5-VE-n6Z"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2D-EW-n0d">
                                                         <rect key="frame" x="316.5" y="0.0" width="97.5" height="101.5"/>
@@ -100,6 +112,9 @@
                                                         <state key="normal" title="×">
                                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="multButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t0C-2W-trX"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -113,6 +128,9 @@
                                                         <state key="normal" title="4">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kqd-Z3-cCt"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60o-sc-V5Z">
                                                         <rect key="frame" x="105.5" y="0.0" width="97.5" height="102"/>
@@ -121,6 +139,9 @@
                                                         <state key="normal" title="5">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fM2-J4-KBx"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaB-d6-Rtj">
                                                         <rect key="frame" x="211" y="0.0" width="97.5" height="102"/>
@@ -129,6 +150,9 @@
                                                         <state key="normal" title="6">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3M-Ke-XIL"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdr-cJ-0Ab">
                                                         <rect key="frame" x="316.5" y="0.0" width="97.5" height="102"/>
@@ -137,6 +161,9 @@
                                                         <state key="normal" title="-">
                                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="subButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyo-rQ-xFw"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -150,6 +177,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Vb-vE-xc7"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1I-AN-7EZ">
                                                         <rect key="frame" x="105.5" y="0.0" width="97.5" height="101.5"/>
@@ -158,6 +188,9 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnW-ot-TWn"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnf-Lm-9oG">
                                                         <rect key="frame" x="211" y="0.0" width="97.5" height="101.5"/>
@@ -166,6 +199,9 @@
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDt-KJ-0Ud"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-8f-RsI">
                                                         <rect key="frame" x="316.5" y="0.0" width="97.5" height="101.5"/>
@@ -174,6 +210,9 @@
                                                         <state key="normal" title="+">
                                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTK-Ul-s30"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -187,6 +226,9 @@
                                                         <state key="normal" title="0">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nc2-KO-sva"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpS-vv-T9o">
                                                         <rect key="frame" x="211" y="0.0" width="97.5" height="101.5"/>
@@ -195,6 +237,9 @@
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kc8-uF-nPS"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL8-Ww-VaA">
                                                         <rect key="frame" x="316.5" y="0.0" width="97.5" height="101.5"/>
@@ -203,6 +248,9 @@
                                                         <state key="normal" title="=">
                                                             <color key="titleColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="equalButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LY9-r5-S8H"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -228,25 +276,27 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outletCollection property="calculatorKeypadButton" destination="CNt-Km-4pM" collectionClass="NSMutableArray" id="eCm-xh-bje"/>
-                        <outletCollection property="calculatorKeypadButton" destination="ssw-7M-nDx" collectionClass="NSMutableArray" id="AZ4-gT-kpy"/>
-                        <outletCollection property="calculatorKeypadButton" destination="eVy-pP-hqO" collectionClass="NSMutableArray" id="2gK-ke-X6T"/>
-                        <outletCollection property="calculatorKeypadButton" destination="Sqb-eG-axQ" collectionClass="NSMutableArray" id="Ogq-NX-7St"/>
-                        <outletCollection property="calculatorKeypadButton" destination="cTG-kL-NUS" collectionClass="NSMutableArray" id="qro-ON-CZC"/>
-                        <outletCollection property="calculatorKeypadButton" destination="9k2-yR-ZCn" collectionClass="NSMutableArray" id="oRn-mP-tVY"/>
-                        <outletCollection property="calculatorKeypadButton" destination="xIe-na-OsS" collectionClass="NSMutableArray" id="fJY-4M-zn4"/>
-                        <outletCollection property="calculatorKeypadButton" destination="C2D-EW-n0d" collectionClass="NSMutableArray" id="cZN-iv-8oo"/>
-                        <outletCollection property="calculatorKeypadButton" destination="v5b-bP-c4b" collectionClass="NSMutableArray" id="VUU-XQ-hO8"/>
-                        <outletCollection property="calculatorKeypadButton" destination="ur2-Av-N70" collectionClass="NSMutableArray" id="B8M-3C-Bhb"/>
-                        <outletCollection property="calculatorKeypadButton" destination="60o-sc-V5Z" collectionClass="NSMutableArray" id="3p2-f6-sbW"/>
-                        <outletCollection property="calculatorKeypadButton" destination="iaB-d6-Rtj" collectionClass="NSMutableArray" id="mqU-lw-Lc3"/>
-                        <outletCollection property="calculatorKeypadButton" destination="Wdr-cJ-0Ab" collectionClass="NSMutableArray" id="ZNE-55-iMc"/>
-                        <outletCollection property="calculatorKeypadButton" destination="BHK-cg-9An" collectionClass="NSMutableArray" id="q1t-bD-5XY"/>
-                        <outletCollection property="calculatorKeypadButton" destination="Y1I-AN-7EZ" collectionClass="NSMutableArray" id="Ejf-mf-k4X"/>
-                        <outletCollection property="calculatorKeypadButton" destination="Lnf-Lm-9oG" collectionClass="NSMutableArray" id="j2S-XI-bm4"/>
-                        <outletCollection property="calculatorKeypadButton" destination="cLS-8f-RsI" collectionClass="NSMutableArray" id="G7c-pW-P2k"/>
-                        <outletCollection property="calculatorKeypadButton" destination="VpS-vv-T9o" collectionClass="NSMutableArray" id="qdo-TW-4JG"/>
-                        <outletCollection property="calculatorKeypadButton" destination="hL8-Ww-VaA" collectionClass="NSMutableArray" id="8SI-oa-lJr"/>
+                        <outlet property="clearButton" destination="CNt-Km-4pM" id="Trs-Yq-MAH"/>
+                        <outlet property="screenLabel" destination="UEQ-5d-Da2" id="KS8-qd-uNG"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="CNt-Km-4pM" collectionClass="NSMutableArray" id="eCm-xh-bje"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="ssw-7M-nDx" collectionClass="NSMutableArray" id="AZ4-gT-kpy"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="eVy-pP-hqO" collectionClass="NSMutableArray" id="2gK-ke-X6T"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="Sqb-eG-axQ" collectionClass="NSMutableArray" id="Ogq-NX-7St"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="cTG-kL-NUS" collectionClass="NSMutableArray" id="qro-ON-CZC"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="9k2-yR-ZCn" collectionClass="NSMutableArray" id="oRn-mP-tVY"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="xIe-na-OsS" collectionClass="NSMutableArray" id="fJY-4M-zn4"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="C2D-EW-n0d" collectionClass="NSMutableArray" id="cZN-iv-8oo"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="v5b-bP-c4b" collectionClass="NSMutableArray" id="VUU-XQ-hO8"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="ur2-Av-N70" collectionClass="NSMutableArray" id="B8M-3C-Bhb"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="60o-sc-V5Z" collectionClass="NSMutableArray" id="3p2-f6-sbW"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="iaB-d6-Rtj" collectionClass="NSMutableArray" id="mqU-lw-Lc3"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="Wdr-cJ-0Ab" collectionClass="NSMutableArray" id="ZNE-55-iMc"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="BHK-cg-9An" collectionClass="NSMutableArray" id="q1t-bD-5XY"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="Y1I-AN-7EZ" collectionClass="NSMutableArray" id="Ejf-mf-k4X"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="Lnf-Lm-9oG" collectionClass="NSMutableArray" id="j2S-XI-bm4"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="cLS-8f-RsI" collectionClass="NSMutableArray" id="G7c-pW-P2k"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="VpS-vv-T9o" collectionClass="NSMutableArray" id="qdo-TW-4JG"/>
+                        <outletCollection property="calculatorKeypadButtons" destination="hL8-Ww-VaA" collectionClass="NSMutableArray" id="8SI-oa-lJr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
