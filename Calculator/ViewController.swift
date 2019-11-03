@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         }
     }
     let calc = Calculator()
+    var lastResult: String = "0"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,6 +76,7 @@ class ViewController: UIViewController {
     @IBAction func equalButtonTapped(_ sender: UIButton) {
         calc.setOperand(text)
         text = String(calc.calculate())
+        lastResult = text
     }
     @IBAction func numberButtonTapped(_ sender: UIButton) {
         if calc.isFinished {
@@ -96,10 +98,14 @@ class ViewController: UIViewController {
             }
         }
     }
-    @IBAction func percentageButtonTapped(_ sender: UIButton) {
-        if !text.isEmpty {
-            text = String((Double(text)! / 100))
+    @IBAction func memoryPlusButtonTapped(_ sender: UIButton) {
+        if text.isEmpty {
+            // set the operation code to 4
+            text = lastResult
+            // set the operand to text
         }
+        // set the text to the operand
+        addButtonTapped(sender)
     }
 }
 
