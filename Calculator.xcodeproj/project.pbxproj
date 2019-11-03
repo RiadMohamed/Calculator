@@ -13,8 +13,9 @@
 		0C6547C22368895E00808DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6547C02368895E00808DAC /* Main.storyboard */; };
 		0C6547C42368897100808DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6547C32368897100808DAC /* Assets.xcassets */; };
 		0C6547C72368897100808DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C6547C52368897100808DAC /* LaunchScreen.storyboard */; };
-		0C6547D52368C06600808DAC /* Calculator_Model.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0C6547D42368C06600808DAC /* Calculator_Model.pdf */; };
 		0C6547D72368C09600808DAC /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6547D62368C09600808DAC /* Calculator.swift */; };
+		0CC6F7D7236F177D003E738C /* Calculator_ViewController.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6F7D5236F177C003E738C /* Calculator_ViewController.pdf */; };
+		0CC6F7D8236F177D003E738C /* Calculator_Model.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6F7D6236F177D003E738C /* Calculator_Model.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +27,9 @@
 		0C6547C32368897100808DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C6547C62368897100808DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C6547C82368897100808DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C6547D42368C06600808DAC /* Calculator_Model.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calculator_Model.pdf; sourceTree = "<group>"; };
 		0C6547D62368C09600808DAC /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		0CC6F7D5236F177C003E738C /* Calculator_ViewController.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calculator_ViewController.pdf; sourceTree = "<group>"; };
+		0CC6F7D6236F177D003E738C /* Calculator_Model.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Calculator_Model.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,8 @@
 		0C6547D3236889E400808DAC /* UML */ = {
 			isa = PBXGroup;
 			children = (
-				0C6547D42368C06600808DAC /* Calculator_Model.pdf */,
+				0CC6F7D6236F177D003E738C /* Calculator_Model.pdf */,
+				0CC6F7D5236F177C003E738C /* Calculator_ViewController.pdf */,
 			);
 			name = UML;
 			sourceTree = "<group>";
@@ -164,8 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C6547C72368897100808DAC /* LaunchScreen.storyboard in Resources */,
+				0CC6F7D7236F177D003E738C /* Calculator_ViewController.pdf in Resources */,
 				0C6547C42368897100808DAC /* Assets.xcassets in Resources */,
-				0C6547D52368C06600808DAC /* Calculator_Model.pdf in Resources */,
+				0CC6F7D8236F177D003E738C /* Calculator_Model.pdf in Resources */,
 				0C6547C22368895E00808DAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

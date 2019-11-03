@@ -28,12 +28,13 @@ class ViewController: UIViewController {
     let calc = Calculator()
     var lastResult: String = "0"
     
+    // MARK:- ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         screenLabel.text = ""
         clearButton.setTitle("AC", for: .normal)
-        roundTheCorners()
+        //roundTheCorners()
     }
     
     // MARK:- UI SETUP FUNCTIONS
