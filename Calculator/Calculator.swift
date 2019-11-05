@@ -17,7 +17,7 @@ class Calculator {
     var result: Double? = nil
     
     // MARK:- Methods
-    func calculate() -> Double {
+    func calculate() -> Double? {
         // 1: Division, 2: Multiplication, 3: Subtraction, 4: Addition
         if let leftOP = leftOperand, let rightOP = rightOperand {
             switch operation {
@@ -35,10 +35,10 @@ class Calculator {
             isFinished = true
             leftOperand = nil
             rightOperand = nil
-            return result ?? 6969
+            return result ?? nil
         }
         print("ERROR READING OPERANDS!!")
-        return 6969
+        return nil
     }
     
     func setOperand(_ text: String) {

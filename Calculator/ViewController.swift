@@ -79,7 +79,11 @@ class ViewController: UIViewController {
    // MARK:- CALC equalButtonTapped
     @IBAction func equalButtonTapped(_ sender: UIButton) {
         calc.setOperand(text)
-        text = String(calc.calculate())
+        if let result = calc.calculate() {
+            text = String(result)
+        } else {
+            text = "Error"
+        }
         lastResult = text
     }
     // MARK:- CALC numberButtonTapped
@@ -118,11 +122,8 @@ class ViewController: UIViewController {
     // MARK:- CALC memoryPlusButtonTapped
     @IBAction func memoryPlusButtonTapped(_ sender: UIButton) {
         if text.isEmpty {
-            // set the operation code to 4
             text = lastResult
-            // set the operand to text
         }
-        // set the text to the operand
         addButtonTapped(sender)
     }
 }
