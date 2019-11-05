@@ -22,7 +22,11 @@ class Calculator {
         if let leftOP = leftOperand, let rightOP = rightOperand {
             switch operation {
                 case 1:
-                result = leftOP / rightOP
+                if rightOP == 0 {
+                    result = nil
+                } else {
+                    result = leftOP / rightOP
+                }
                 case 2:
                 result = leftOP * rightOP
                 case 3:
