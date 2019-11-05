@@ -92,14 +92,27 @@ class ViewController: UIViewController {
             text = ""
             calc.isFinished = false
         }
+        if sender.currentTitle == "0", text.count == 1, text.first == "0" {
+            // MULTIPLE ZEROS TO THE LEFT. IGNORE.
+            return
+        }
+        
         if sender.currentTitle == "." {
             if text.firstIndex(of: ".") != nil {
                 // DECIMAL POINT FOUND ALREADY. IGNORE ADDING IT.
             } else {
-                text.append(sender.currentTitle!)
+                if text.count < 9 {
+                    text.append(sender.currentTitle!)
+                } else {
+                    // TEXT LONGER THAN 9 CHARACTERS. IGNORE!
+                }
             }
         } else {
-            text.append(sender.currentTitle!)
+            if text.count < 9 {
+                text.append(sender.currentTitle!)
+            } else {
+                // TEXT LONGER THAN 9 CHARACTERS. IGNORE!
+            }
         }
         
     }
@@ -111,12 +124,10 @@ class ViewController: UIViewController {
     }
     // MARK:- CALC negativeButtonTapped
     @IBAction func negativeButtonTapped(_ sender: UIButton) {
-        if !text.isEmpty {
-            if text.first == "-" {
-                text.removeFirst()
-            } else {
-                text.insert("-", at: text.startIndex)
-            }
+        if text.first == "-" {
+            text.removeFirst()
+        } else {
+            text.insert("-", at: text.startIndex)
         }
     }
     // MARK:- CALC memoryPlusButtonTapped
