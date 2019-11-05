@@ -17,14 +17,6 @@ class Calculator {
     var result: Double? = nil
     
     // MARK:- Methods
-    func getLeftOperand(_ text: String) {
-        self.leftOperand = Double(text)
-    }
-    
-    func getRightOperand(_ text: String) {
-        self.rightOperand = Double(text)
-    }
-    
     func calculate() -> Double {
         // 1: Division, 2: Multiplication, 3: Subtraction, 4: Addition
         if let leftOP = leftOperand, let rightOP = rightOperand {

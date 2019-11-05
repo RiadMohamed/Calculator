@@ -83,7 +83,16 @@ class ViewController: UIViewController {
         if calc.isFinished {
             text = ""
         }
-        text.append(sender.currentTitle!)
+        if sender.currentTitle == "." {
+            if text.firstIndex(of: ".") != nil {
+                // DECIMAL POINT FOUND ALREADY. IGNORE ADDING IT.
+            } else {
+                text.append(sender.currentTitle!)
+            }
+        } else {
+            text.append(sender.currentTitle!)
+        }
+        
     }    
     @IBAction func clearButtonTapped(_ sender: UIButton) {
         if !text.isEmpty {
@@ -103,7 +112,7 @@ class ViewController: UIViewController {
         if text.isEmpty {
             // set the operation code to 4
             text = lastResult
-            // set the operand to text
+            // set the operanczczxcdvxvcvxcvsddfdsfgcrecvxcxcd to text
         }
         // set the text to the operand
         addButtonTapped(sender)
