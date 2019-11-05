@@ -52,36 +52,41 @@ class ViewController: UIViewController {
     }
 
     
-    // MARK:- Calculator IB Functions
+    // MARK:- CALC divButtonTapped
     @IBAction func divButtonTapped(_ sender: UIButton) {
         calc.operation = 1
         calc.setOperand(text)
         text = ""
     }
+    // MARK:- CALC multButtonTapped
     @IBAction func multButtonTapped(_ sender: UIButton) {
         calc.operation = 2
         calc.setOperand(text)
         text = ""
     }
+    // MARK:- CALC subButtonTapped
     @IBAction func subButtonTapped(_ sender: UIButton) {
         calc.operation = 3
         calc.setOperand(text)
         text = ""
     }
+    // MARK:- CALC addButtonTapped
     @IBAction func addButtonTapped(_ sender: UIButton) {
         calc.operation = 4
         calc.setOperand(text)
         text = ""
     }
-   
+   // MARK:- CALC equalButtonTapped
     @IBAction func equalButtonTapped(_ sender: UIButton) {
         calc.setOperand(text)
         text = String(calc.calculate())
         lastResult = text
     }
+    // MARK:- CALC numberButtonTapped
     @IBAction func numberButtonTapped(_ sender: UIButton) {
         if calc.isFinished {
             text = ""
+            calc.isFinished = false
         }
         if sender.currentTitle == "." {
             if text.firstIndex(of: ".") != nil {
@@ -93,12 +98,14 @@ class ViewController: UIViewController {
             text.append(sender.currentTitle!)
         }
         
-    }    
+    }
+    // MARK:- CALC clearButtonTapped
     @IBAction func clearButtonTapped(_ sender: UIButton) {
         if !text.isEmpty {
             text.removeLast()
         }
     }
+    // MARK:- CALC negativeButtonTapped
     @IBAction func negativeButtonTapped(_ sender: UIButton) {
         if !text.isEmpty {
             if text.first == "-" {
@@ -108,11 +115,12 @@ class ViewController: UIViewController {
             }
         }
     }
+    // MARK:- CALC memoryPlusButtonTapped
     @IBAction func memoryPlusButtonTapped(_ sender: UIButton) {
         if text.isEmpty {
             // set the operation code to 4
             text = lastResult
-            // set the operanczczxcdvxvcvxcvsddfdsfgcrecvxcxcd to text
+            // set the operand to text
         }
         // set the text to the operand
         addButtonTapped(sender)
